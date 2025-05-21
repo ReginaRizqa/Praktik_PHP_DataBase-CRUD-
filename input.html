@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>File Input Example</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Input Data</h1>
+    <div class="container">
+        <form id="form_dosen" action="proses_inputdosen.php" method="post">
+            <fieldset>
+                <legend>Input Data Dosen</legend>
+                <p>
+                    <label for="nama">Nama Dosen:</label>
+                    <input type="text" name="namaDosen" id="namaDosen" required>
+                </p>
+                <p>
+                    <label for="noHP">No.HP:</label>
+                    <input type="text" name="noHP" id="noHP" placeholder="Contoh: 0812223344" required>
+                </p>
+
+            </fieldset>
+            <p>
+                <input type="submit" name="input" value="simpan">
+                
+            </p>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Mahasiswa</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            margin: auto;
+        }
+        fieldset {
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            padding: 8px 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Input Data Mahasiswa</h1>
+    <div class="container">
+        <form id="form_mahasiswa" action="proses_inputmhs.php" method="post">
+            <fieldset>
+                <legend>Form Mahasiswa</legend>
+                <label for="npm">NPM:</label><br>
+                <input type="text" name="npm" id="npm" required><br>
+
+                <label for="namaMhs">Nama Mahasiswa:</label><br>
+                <input type="text" name="namaMhs" id="namaMhs" required><br>
+
+                <label for="prodi">Program Studi:</label><br>
+                <input type="text" name="prodi" id="prodi" required><br>
+
+                <label for="alamat">Alamat:</label><br>
+                <textarea name="alamat" id="alamat" rows="3" required></textarea><br>
+
+                <label for="noHP">No. HP:</label><br>
+                <input type="text" name="noHP" id="noHP" placeholder="Contoh: 08123456789" required><br>
+            </fieldset>
+            <p>
+                <input type="submit" name="simpan" value="Simpan">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
